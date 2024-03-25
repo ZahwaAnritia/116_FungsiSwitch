@@ -31,6 +31,7 @@ int main()
 {
 	int pilihan;
 	
+	do {
 		system("cls");
 		cout << "==========Menu=======" << endl;
 		cout << "1. Penjumlahan" << endl;
@@ -44,9 +45,32 @@ int main()
 		switch (pilihan) {
 		case 1:
 			input();
-			cout << "Hasil Penjumlahan = " << penjumlahan(a, b) << endl;
+			cout << "Hasil penjumlahan = " << penjumlahan(a, b) << endl;
+			system("pause");
+			break;
+		case 2:
+			input();
+			cout << "Hasil pengurangan = " << penjumlahan(a, b) << endl;
+			system("pause");
+			break;
+		case 3:
+			input();
+			cout << "Hasil perkalian = " << penjumlahan(a, b) << endl;
+			system("pause");
+			break;
+		case 4:
+			input();
+			cout << "Hasil pembagian = " << penjumlahan(a, b) << endl;
+			system("pause");
+			break;
+		case 5:
+			break;
+		default:
+			cout << "Menu tidak tersedia silahkan pilih lagi !!!" << endl;
+
 		}
 
-	
+
+	} while (pilihan != 5);
 	
 }
